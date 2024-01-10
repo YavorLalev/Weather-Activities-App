@@ -6,7 +6,9 @@ function App() {
   const [activities, setActivities] = useState([]);
 
   function handleAddActivity(newActivity) {
-    setActivities([{ newActivity }]);
+    setActivities([...activities, newActivity]);
+
+    console.log();
   }
 
   return (

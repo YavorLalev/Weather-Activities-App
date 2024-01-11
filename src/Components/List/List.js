@@ -1,10 +1,19 @@
 export default function List({ activities }) {
   console.log("activities", activities);
   return (
-    <ul>
-      {activities.map((activity) => {
-        return <li key={activity.id}>{activity.name}</li>;
-      })}
-    </ul>
+    <>
+      <h2>
+        {activities.isForGoodWeather === true ? (
+          <h2>When weather is good do this...</h2>
+        ) : (
+          <h2>When weather is bad do this...</h2>
+        )}
+      </h2>
+      <ul>
+        {activities.map((activity) => {
+          return <li key={activity.id}>{activity.name}</li>;
+        })}
+      </ul>
+    </>
   );
 }

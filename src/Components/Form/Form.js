@@ -16,9 +16,11 @@ export default function Form({ onAddActivity }) {
   }
   return (
     <form className="form" onSubmit={handleEventSubmit}>
-      <h1>Add new Activity:</h1>
-      <label htmlFor="name">Name:</label>
-      <input type="text" id="name" name="name" />
+      <h2>Add new Activity:</h2>
+      <div>
+        <label htmlFor="name">Name:</label>
+        <input type="text" id="name" name="name" />
+      </div>
       <div>
         <label htmlFor="good-weather-activity">Good-weather activity:</label>
         <input

@@ -1,8 +1,6 @@
 import "./list.css";
 
 export default function List({ activities, isGoodWeather }) {
-  console.log("activities", activities);
-  console.log("good Weather", activities.isGoodWeather);
   return (
     <>
       <h2>

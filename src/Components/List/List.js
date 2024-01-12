@@ -1,3 +1,5 @@
+import "./list.css";
+
 export default function List({ activities }) {
   console.log("activities", activities);
   return (

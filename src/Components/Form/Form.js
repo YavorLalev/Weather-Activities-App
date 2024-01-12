@@ -1,3 +1,5 @@
+import "./form.css";
+
 export default function Form({ onAddActivity }) {
   function handleEventSubmit(event) {
     event.preventDefault();
@@ -9,21 +11,25 @@ export default function Form({ onAddActivity }) {
     onAddActivity(data);
     console.log(data);
 
-    event.target.reset();
-    event.target.elements.name.focus();
+    form.reset();
+    form.name.focus();
   }
   return (
-    <form onSubmit={handleEventSubmit}>
+    <form className="form" onSubmit={handleEventSubmit}>
       <h1>Add new Activity:</h1>
       <label htmlFor="name">Name:</label>
-      <input id="name" name="name" />
-      <label htmlFor="good-weather-activity">Good-weather activity:</label>
-      <input
-        type="checkbox"
-        id="good-weather-activity"
-        name="isForGoodWeather"
-      />
-      <button type="submit">Submit</button>
+      <input type="text" id="name" name="name" />
+      <div>
+        <label htmlFor="good-weather-activity">Good-weather activity:</label>
+        <input
+          type="checkbox"
+          id="good-weather-activity"
+          name="isForGoodWeather"
+        />
+      </div>
+      <button className="button" type="submit">
+        Submit
+      </button>
     </form>
   );
 }

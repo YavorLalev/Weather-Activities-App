@@ -5,7 +5,7 @@ export default function List({ activities }) {
   return (
     <>
       <h2>
-        {activities.isForGoodWeather === true ? (
+        {activities.isForGoodWeather === false ? (
           <h2>When weather is good do this...</h2>
         ) : (
           <h2>When weather is bad do this...</h2>

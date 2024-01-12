@@ -19,7 +19,7 @@ function App() {
 
   return (
     <div>
-      <List activities={activityForGoodWeather} />
+      <List activities={activityForGoodWeather} isGoodWeather={isGoodWeather} />
       <Form onAddActivity={handleAddActivity} />
     </div>
   );

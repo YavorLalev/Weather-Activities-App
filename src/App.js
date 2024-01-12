@@ -8,15 +8,18 @@ function App() {
   const [activities, setActivities] = useLocalStorageState("activities", {
     defaultValue: [],
   });
+  const isGoodWeather = true;
+  const activityForGoodWeather = activities.filter((activity) => {
+    return activity.isForGoodWeather === isGoodWeather;
+  });
 
   function handleAddActivity(newActivity) {
     setActivities([...activities, { ...newActivity, id: uid() }]);
-    console.log(activities);
   }
 
   return (
     <div>
-      <List activities={activities} />
+      <List activities={activityForGoodWeather} />
       <Form onAddActivity={handleAddActivity} />
     </div>
   );

@@ -6,12 +6,19 @@
 }
 
 .button {
-  color: rgb(0, 0, 0);
+  color: #3d3d3d;
   text-transform: lowercase;
-  font-size: 1.2rem;
-  background: rgb(241, 208, 112);
+  font-size: 1.3rem;
+  font-weight: 600;
+  background-color: #fbe600;
   box-shadow: 2px 2px 4px 2px rgb(240, 240, 240);
   border: none;
   border-radius: 4px;
   padding: 8px;
+}
+
+.form-elements {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 0.2rem;
 }

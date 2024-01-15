@@ -5,8 +5,8 @@ export default function List({ activities, isGoodWeather }) {
     <>
       <h2>
         {isGoodWeather
-          ? "When weather is good do this..."
-          : "When weather is bad do this..."}
+          ? "It looks like a nice weather outside! Maybe you can:"
+          : "The weather is not good today! Try one of the following activities:"}
       </h2>
       <ul>
         {activities.map((activity) => {

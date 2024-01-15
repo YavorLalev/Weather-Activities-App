@@ -11,12 +11,12 @@ li {
   color: var(--foam-color);
   font-size: 1.15rem;
   font-weight: 600;
-  border-radius: 16px;
+  border-radius: 14px;
   border: 1px dotted rgb(103, 176, 255);
   padding: 0.7rem;
   margin-top: 0.8rem;
   position: relative;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.08rem;
 }
 
 .delete-button {
@@ -29,4 +29,30 @@ li {
   padding: 0.4rem;
   font-size: 1.3rem;
   cursor: pointer;
+}
+
+.light {
+  background-color: var(--list-color);
+  color: var(--foam-color);
+  font-size: 1.15rem;
+  font-weight: 600;
+  border-radius: 14px;
+  border: 1px dotted rgb(103, 176, 255);
+  padding: 0.7rem;
+  margin-top: 0.8rem;
+  position: relative;
+  letter-spacing: 0.08rem;
+}
+
+.dark {
+  background-color: var(--color-granite);
+  color: var(--foam-color);
+  font-size: 1.15rem;
+  font-weight: 600;
+  border-radius: 14px;
+  border: 1px dotted rgb(103, 176, 255);
+  padding: 0.7rem;
+  margin-top: 0.8rem;
+  position: relative;
+  letter-spacing: 0.08rem;
 }

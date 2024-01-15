@@ -9,17 +9,17 @@
   text-transform: lowercase;
   font-size: 1.3rem;
   font-weight: 600;
-  background-color: #fbe600;
+  background-color: var(--button-color);
   box-shadow: 2px 2px 4px 2px rgb(240, 240, 240);
   border: none;
   border-radius: 4px;
   padding: 8px;
   opacity: 0.9;
-  color: #3d3d3d;
+  color: var(--text-dark-color);
 }
 .button:hover {
   cursor: pointer;
-  background-color: #fbe600;
+  background-color: var(--button-color);
   opacity: 1;
 }
 

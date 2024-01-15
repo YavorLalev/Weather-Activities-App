@@ -15,10 +15,11 @@ export default function List({ activities, isGoodWeather, onDeleteActivity }) {
               {activity.name}
               <button
                 type="button"
+                className="delete-button"
                 onClick={() => onDeleteActivity(activity.id)}
               >
                 {" "}
-                🚮
+                🗑️
               </button>
             </li>
           );

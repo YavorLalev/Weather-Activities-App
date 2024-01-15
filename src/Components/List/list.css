@@ -1,5 +1,18 @@
-li {
+ul {
   list-style: none;
-  border: 1px solid black;
-  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  margin-inline: -2.4rem;
+  margin-right: 0.1rem;
+  margin-bottom: 1.5rem;
+}
+
+li {
+  background-color: #3cceff;
+  color: rgb(255, 255, 255);
+  font-size: 1.2rem;
+  font-weight: 500;
+  border-radius: 16px;
+  padding: 0.7rem;
+  margin-top: 0.8rem;
 }

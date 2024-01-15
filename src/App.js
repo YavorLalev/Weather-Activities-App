@@ -10,7 +10,7 @@ function App() {
     defaultValue: [],
   });
   const [weather, setWeather] = useState(null);
-  //const isGoodWeather = setWeather;
+
   const activityForGoodWeather = activities.filter((activity) => {
     return activity.isForGoodWeather === weather?.isGoodWeather;
   });

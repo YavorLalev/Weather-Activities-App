@@ -25,10 +25,10 @@ function App() {
   }
 
   useEffect(() => {
-    const id = setWeather(getWeather, 5000);
+    const interval = setInterval(getWeather, 5000);
 
     return () => {
-      clearInterval(id);
+      clearInterval(interval);
     };
   }, []);
 

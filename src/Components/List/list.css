@@ -2,23 +2,23 @@ ul {
   list-style: none;
   display: flex;
   flex-direction: column;
-  /* margin-inline: -2.4rem; */
-  margin-right: 0.1rem;
+  /* margin-right: 0.1rem; */
   margin-bottom: 1.5rem;
+  padding-inline-start: 0;
 }
 
 li {
   background-color: #3cceff;
   color: rgb(0, 0, 0);
-  font-size: 1.2rem;
-  font-weight: 600;
+  font-size: 1.1rem;
+  font-weight: 500;
   border-radius: 16px;
   border: 1px dotted rgb(103, 176, 255);
   padding: 0.7rem;
   margin-top: 0.8rem;
   position: relative;
-  letter-spacing: 0.2rem;
-  width: 90%;
+  letter-spacing: 0.1rem;
+  /* width: 90%; */
 }
 
 .delete-button {

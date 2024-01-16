@@ -25,7 +25,18 @@
 }
 
 .form-elements {
+  display: flex;
+  justify-content: flex-start;
   font-size: 1.2rem;
   font-weight: 500;
   margin-bottom: 0.2rem;
+}
+
+input[type="text"] {
+  margin-left: 10px;
+  width: 100%;
+}
+
+input[type="checkbox"] {
+  margin-left: 10px;
 }

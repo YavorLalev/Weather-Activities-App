@@ -1,6 +1,6 @@
 .app {
   min-height: 100vh;
-  max-width: 400px;
+  max-width: 300px;
   margin: 0 auto;
 }
 
@@ -19,7 +19,7 @@ header {
 
 h2 {
   font-weight: 500;
-  margin-bottom: 1rem;
+  margin-bottom: 0.7rem;
 }
 
 h3 {

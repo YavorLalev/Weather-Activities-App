@@ -1,12 +1,6 @@
 import "./list.css";
 
 export default function List({ activities, isGoodWeather, onDeleteActivity }) {
-  // // function badWeather() {
-  //   if(isGoodWeather === false) {
-  //     return
-  //   }
-  // }
-
   return (
     <>
       <h3>
@@ -25,7 +19,7 @@ export default function List({ activities, isGoodWeather, onDeleteActivity }) {
                 onClick={() => onDeleteActivity(activity.id)}
               >
                 {" "}
-                🗑️
+                🆇
               </button>
             </li>
           );

@@ -40,7 +40,7 @@ function App() {
     setActivities(activities.filter((activity) => activity.id !== id));
   }
   return (
-    <div>
+    <div className="app">
       <header>
         <span>
           {weather === null
@@ -48,12 +48,14 @@ function App() {
             : `${weather.condition}  ${weather.temperature}°`}
         </span>
       </header>
-      <List
-        activities={activityForGoodWeather}
-        isGoodWeather={weather?.isGoodWeather}
-        onDeleteActivity={handleDeleteActivity}
-      />
-      <Form onAddActivity={handleAddActivity} />
+      <main className="app__main">
+        <List
+          activities={activityForGoodWeather}
+          isGoodWeather={weather?.isGoodWeather}
+          onDeleteActivity={handleDeleteActivity}
+        />
+        <Form onAddActivity={handleAddActivity} />
+      </main>
     </div>
   );
 }
